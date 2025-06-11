@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-hint">
+        Hint to tester/user: Please try to make possible number of errors, so
+        that we'll get to know how efficient my code is working. You will get
+        the correct credentials after the 3 attempts. Till then, test my code.
+        Thanks for your patience.
+      </div>
+
+      <div class="login-card">
+        <h2>Welcome To My Login Page</h2>
+        <p>Please login to your account</p>
+        <form id="loginForm">
+          <input type="email" id="email" placeholder="Email" />
+          <div class="error-message" id="emailError"></div>
+
+          <input type="password" id="password" placeholder="Password" />
+          <div class="error-message" id="passwordError"></div>
+
+          <button type="submit">Login</button>
+        </form>
+
+        <div id="message"></div>
+      </div>
+    </div>
+    <script src="Logic.js"></script>
+  </body>
+</html>

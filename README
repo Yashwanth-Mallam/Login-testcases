@@ -1,0 +1,52 @@
+## Login Page Overview
+
+--> Connected to a JSON Server that simulates a REST API with user data.
+--> Validates email format (must include `@gmail.com`).
+--> Checks for password presence\*and validates against user credentials from the server.
+--> Displays a popup with correct credentials after 3 failed login attempts to help testers.
+--> Fields with errors are visually highlighted with red borders and error messages.
+--> Features a top hint message encouraging users to test all validation cases.
+--> On successful login, user data is saved in `localStorage` and user is redirected to `Welcome page`.
+--> Fully responsive and styled with professional UI/UX using modern gradients, shadows, and interactions.
+--> Designed for robust testing, debugging, and showcasing form validation logic.
+
+---
+
+## Login Page Test Cases to Try
+
+- TC01: Leave both email and password fields empty
+  → Error shown for both fields; red border highlights.
+
+- TC02: Enter email only
+  → "Password is required" error displayed.
+
+- TC03: Enter password only
+  → "Email is required or include @gmail.com" error displayed.
+
+- TC04: Enter invalid email format (e.g. `user`)
+  → Shows message to include `@gmail.com`.
+
+- TC05: Enter non-existent email
+  → Displays `"User not found!"` message.
+
+- TC06: Enter correct email with wrong password
+  → Displays `"Incorrect password!"` message.
+
+- TC07: Enter correct email and password
+  → Shows `"Login successful!"` message in green and redirects to Welcome page.
+
+- TC08: Attempt 3 incorrect logins
+  → On 4th attempt, a popup reveals the correct credentials.
+
+- TC09: Trigger input validation errors
+  → Red border and shadow highlight on input fields with issues.
+
+- TC10: Successful login styling
+  → Green confirmation message shown (`#27ae60` color).
+
+- TC11: Top hint section visible on page
+  → Occupies full width with red styling to guide testers.
+
+---
+
+Let me know if you'd like this exported as a `.md` file or merged into your full README structure!
